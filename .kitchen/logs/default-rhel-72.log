@@ -1,0 +1,79 @@
+I, [2016-09-23T18:10:03.097676 #9105]  INFO -- default-rhel-72: -----> Creating <default-rhel-72>...
+I, [2016-09-23T18:10:04.989874 #9105]  INFO -- default-rhel-72: VirtualBox is complaining that the kernel module is not loaded. Please
+I, [2016-09-23T18:10:04.989970 #9105]  INFO -- default-rhel-72: run `VBoxManage --version` or open the VirtualBox GUI to see the error
+I, [2016-09-23T18:10:04.990002 #9105]  INFO -- default-rhel-72: message which should contain instructions on how to fix this error.
+E, [2016-09-23T18:10:05.022446 #9105] ERROR -- default-rhel-72: Create failed on instance <default-rhel-72>.
+E, [2016-09-23T18:10:05.022671 #9105] ERROR -- default-rhel-72: ------Exception-------
+E, [2016-09-23T18:10:05.022705 #9105] ERROR -- default-rhel-72: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2016-09-23T18:10:05.022729 #9105] ERROR -- default-rhel-72: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider virtualbox ----
+STDOUT: 
+STDERR: VirtualBox is complaining that the kernel module is not loaded. Please
+run `VBoxManage --version` or open the VirtualBox GUI to see the error
+message which should contain instructions on how to fix this error.
+---- End output of vagrant up --no-provision --provider virtualbox ----
+Ran vagrant up --no-provision --provider virtualbox returned 1
+E, [2016-09-23T18:10:05.022752 #9105] ERROR -- default-rhel-72: ----------------------
+E, [2016-09-23T18:10:05.022773 #9105] ERROR -- default-rhel-72: ------Backtrace-------
+E, [2016-09-23T18:10:05.022793 #9105] ERROR -- default-rhel-72: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/shell_out.rb:73:in `rescue in run_command'
+E, [2016-09-23T18:10:05.022814 #9105] ERROR -- default-rhel-72: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/shell_out.rb:61:in `run_command'
+E, [2016-09-23T18:10:05.022835 #9105] ERROR -- default-rhel-72: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/kitchen-vagrant-0.20.0/lib/kitchen/driver/vagrant.rb:343:in `run_command'
+E, [2016-09-23T18:10:05.022864 #9105] ERROR -- default-rhel-72: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/kitchen-vagrant-0.20.0/lib/kitchen/driver/vagrant.rb:302:in `run'
+E, [2016-09-23T18:10:05.022886 #9105] ERROR -- default-rhel-72: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/kitchen-vagrant-0.20.0/lib/kitchen/driver/vagrant.rb:373:in `run_vagrant_up'
+E, [2016-09-23T18:10:05.022908 #9105] ERROR -- default-rhel-72: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/kitchen-vagrant-0.20.0/lib/kitchen/driver/vagrant.rb:96:in `create'
+E, [2016-09-23T18:10:05.022929 #9105] ERROR -- default-rhel-72: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:449:in `public_send'
+E, [2016-09-23T18:10:05.022950 #9105] ERROR -- default-rhel-72: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:449:in `block in perform_action'
+E, [2016-09-23T18:10:05.022970 #9105] ERROR -- default-rhel-72: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:510:in `call'
+E, [2016-09-23T18:10:05.022991 #9105] ERROR -- default-rhel-72: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:510:in `block in synchronize_or_call'
+E, [2016-09-23T18:10:05.023012 #9105] ERROR -- default-rhel-72: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:508:in `synchronize'
+E, [2016-09-23T18:10:05.023033 #9105] ERROR -- default-rhel-72: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:508:in `synchronize_or_call'
+E, [2016-09-23T18:10:05.023053 #9105] ERROR -- default-rhel-72: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:478:in `block in action'
+E, [2016-09-23T18:10:05.023090 #9105] ERROR -- default-rhel-72: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2016-09-23T18:10:05.023113 #9105] ERROR -- default-rhel-72: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:477:in `action'
+E, [2016-09-23T18:10:05.023146 #9105] ERROR -- default-rhel-72: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:449:in `perform_action'
+E, [2016-09-23T18:10:05.023170 #9105] ERROR -- default-rhel-72: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:359:in `create_action'
+E, [2016-09-23T18:10:05.023191 #9105] ERROR -- default-rhel-72: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:348:in `block in transition_to'
+E, [2016-09-23T18:10:05.023212 #9105] ERROR -- default-rhel-72: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:347:in `each'
+E, [2016-09-23T18:10:05.023233 #9105] ERROR -- default-rhel-72: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:347:in `transition_to'
+E, [2016-09-23T18:10:05.023257 #9105] ERROR -- default-rhel-72: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:127:in `create'
+E, [2016-09-23T18:10:05.023279 #9105] ERROR -- default-rhel-72: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/command.rb:201:in `public_send'
+E, [2016-09-23T18:10:05.023301 #9105] ERROR -- default-rhel-72: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/command.rb:201:in `run_action_in_thread'
+E, [2016-09-23T18:10:05.023322 #9105] ERROR -- default-rhel-72: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/command.rb:173:in `block (2 levels) in run_action'
+E, [2016-09-23T18:10:05.023343 #9105] ERROR -- default-rhel-72: ----End Backtrace-----
+E, [2016-09-23T18:10:05.023370 #9105] ERROR -- default-rhel-72: ---Nested Exception---
+E, [2016-09-23T18:10:05.023390 #9105] ERROR -- default-rhel-72: Class: Mixlib::ShellOut::ShellCommandFailed
+E, [2016-09-23T18:10:05.023409 #9105] ERROR -- default-rhel-72: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider virtualbox ----
+STDOUT: 
+STDERR: VirtualBox is complaining that the kernel module is not loaded. Please
+run `VBoxManage --version` or open the VirtualBox GUI to see the error
+message which should contain instructions on how to fix this error.
+---- End output of vagrant up --no-provision --provider virtualbox ----
+Ran vagrant up --no-provision --provider virtualbox returned 1
+E, [2016-09-23T18:10:05.023440 #9105] ERROR -- default-rhel-72: ----------------------
+E, [2016-09-23T18:10:05.023460 #9105] ERROR -- default-rhel-72: ------Backtrace-------
+E, [2016-09-23T18:10:05.023497 #9105] ERROR -- default-rhel-72: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/shell_out.rb:73:in `rescue in run_command'
+E, [2016-09-23T18:10:05.023519 #9105] ERROR -- default-rhel-72: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/shell_out.rb:61:in `run_command'
+E, [2016-09-23T18:10:05.023540 #9105] ERROR -- default-rhel-72: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/kitchen-vagrant-0.20.0/lib/kitchen/driver/vagrant.rb:343:in `run_command'
+E, [2016-09-23T18:10:05.023561 #9105] ERROR -- default-rhel-72: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/kitchen-vagrant-0.20.0/lib/kitchen/driver/vagrant.rb:302:in `run'
+E, [2016-09-23T18:10:05.023601 #9105] ERROR -- default-rhel-72: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/kitchen-vagrant-0.20.0/lib/kitchen/driver/vagrant.rb:373:in `run_vagrant_up'
+E, [2016-09-23T18:10:05.023625 #9105] ERROR -- default-rhel-72: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/kitchen-vagrant-0.20.0/lib/kitchen/driver/vagrant.rb:96:in `create'
+E, [2016-09-23T18:10:05.023646 #9105] ERROR -- default-rhel-72: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:449:in `public_send'
+E, [2016-09-23T18:10:05.023666 #9105] ERROR -- default-rhel-72: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:449:in `block in perform_action'
+E, [2016-09-23T18:10:05.023696 #9105] ERROR -- default-rhel-72: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:510:in `call'
+E, [2016-09-23T18:10:05.023720 #9105] ERROR -- default-rhel-72: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:510:in `block in synchronize_or_call'
+E, [2016-09-23T18:10:05.023741 #9105] ERROR -- default-rhel-72: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:508:in `synchronize'
+E, [2016-09-23T18:10:05.023762 #9105] ERROR -- default-rhel-72: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:508:in `synchronize_or_call'
+E, [2016-09-23T18:10:05.023782 #9105] ERROR -- default-rhel-72: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:478:in `block in action'
+E, [2016-09-23T18:10:05.023812 #9105] ERROR -- default-rhel-72: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2016-09-23T18:10:05.023833 #9105] ERROR -- default-rhel-72: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:477:in `action'
+E, [2016-09-23T18:10:05.023853 #9105] ERROR -- default-rhel-72: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:449:in `perform_action'
+E, [2016-09-23T18:10:05.023873 #9105] ERROR -- default-rhel-72: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:359:in `create_action'
+E, [2016-09-23T18:10:05.023893 #9105] ERROR -- default-rhel-72: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:348:in `block in transition_to'
+E, [2016-09-23T18:10:05.023913 #9105] ERROR -- default-rhel-72: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:347:in `each'
+E, [2016-09-23T18:10:05.023933 #9105] ERROR -- default-rhel-72: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:347:in `transition_to'
+E, [2016-09-23T18:10:05.023954 #9105] ERROR -- default-rhel-72: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:127:in `create'
+E, [2016-09-23T18:10:05.024004 #9105] ERROR -- default-rhel-72: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/command.rb:201:in `public_send'
+E, [2016-09-23T18:10:05.024026 #9105] ERROR -- default-rhel-72: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/command.rb:201:in `run_action_in_thread'
+E, [2016-09-23T18:10:05.024047 #9105] ERROR -- default-rhel-72: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/command.rb:173:in `block (2 levels) in run_action'
+E, [2016-09-23T18:10:05.024069 #9105] ERROR -- default-rhel-72: ----End Backtrace-----
