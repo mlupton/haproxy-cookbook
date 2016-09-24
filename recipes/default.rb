@@ -20,12 +20,12 @@ end
 
 nginxnodes = search(:node, "role:nginx")
 nginxnodes.each do |node|
-  Chef::Log.info("#{node["name"]} has IP address #{node["ipaddress"]}")
+  Chef::Log.info("#{node.name} has IP address #{node["ipaddress"]}")
   bash 'extract_module' do
     user 'root'
     cwd '/root'
     code <<-EOH
-      echo "   server #{node["name"]} #{node["ipaddress"]}:80 check" | tee -a /etc/haproxy/haproxy.cfg
+      echo "   server #{node.name} #{node["ipaddress"]}:80 check" | tee -a /etc/haproxy/haproxy.cfg
     EOH
   end
 end 
